@@ -85,21 +85,16 @@
 			},
 			// @ts-ignore
 			dragContainer: document.querySelector(".container"),
-			// dragSort: function () {
-			// 	return list;
-			// },
 		})
 			.on("remove", function (items, indices) {
 				console.log("onRemove item", items);
 				console.log("onRemove indices", indices);
-
-				// Update backend van een verwijderde object
-				// dmv een id
 			})
 			.on("dragStart", function (item, event) {
 				console.log("dragStart");
 
 				const grid = item.getGrid();
+				// @ts-ignore
 				console.log("Grid id: ", grid._id);
 
 				const index = grid.getItems().indexOf(item);
@@ -148,18 +143,6 @@
 
 		return grid;
 	}
-
-	// this is called when rendering is done
-	afterUpdate(() => {
-		console.log("afterUpdate: ", gridList);
-
-		/**
-		 * We need this implementation to rebuild the Muuri grid.
-		 * If not, Muuri won't be noticed of added items.
-		 */
-
-		console.log("Grids: ", gridList);
-	});
 </script>
 
 <div class="container is-flex">
