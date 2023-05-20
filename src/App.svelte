@@ -1,8 +1,9 @@
 <script>
+	import Kanban from "./components/Kanban.svelte";
 </script>
 
 <main>
-	<h1>Hello friends!</h1>
+	<Kanban />
 </main>
 
 <style>
