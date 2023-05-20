@@ -19,3 +19,7 @@ I'm too impatient to read the docs of Muuri carefully and I'm a bit new to Svelt
 ## Run the app
 
 `npm run dev`
+
+# Demo
+
+![](media/muuri.gif)
